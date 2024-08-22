@@ -1,0 +1,35 @@
+Name: Avery Jones
+Date: August 22
+---
+
+Program Description:
+This program Sells a set number of tickets (20) with a purchas limit of 4.
+After all tickets are purchased the program will show the total number of buyers.
+
+---
+
+logical steps:
+1. prompt user to enter desired amount of tickets
+2. check if desired amount is between 1 and 4 and if the amount desired is more than avalable
+3. subtract desired ticket amount from total amount of tickets and add 1 to total amount of buyers
+4. repeat steps 1-3 until all tickets are sold
+5. print total number of buyers
+
+---
+
+variables:
+1. total_tickets: The total amount of tickets avalable to buy
+2. total_buyers: the total amount of people to buy tickets
+3. desired_tickets: the amount of tickets a buyer wants
+
+---
+
+Functions:
+1. Function Name: pre_sell_tickets
+   Description: Sells a set amount of tickets and counts total amount of buyers
+   Parameters: none
+   returns: total count of buyers
+
+---
+
+Link to repository: https://github.com/AJones711/COP2373
