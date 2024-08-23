@@ -1,0 +1,41 @@
+Name: Avery Jones
+Date Created: August 22, 2024
+
+---
+
+Program Description:
+This program creates a .txt file that contains a list of responses. This .txt file is then read
+and used to generate random responses to yes or no questions.
+
+---
+
+Logical steps:
+1. Write list into .txt file.
+2. Load and read .txt file.
+3. Ask user to input a yes or no question.
+4. Display random response from the .txt file.
+5. repeat steps 3 and 4 until user types "quit".
+
+---
+
+Variables:
+1. responses: The full list of responses in the .txt file.
+2. response: An individual response from the .txt file.
+3. question: Get the user to input a yes or no question.
+
+---
+
+Functions:
+1. Function Name: create_txt_file
+   Description: Creates a .txt file from a list of responses.
+   Parameters: none
+   Returns: The file 8ball_responses.txt
+2. Function Name: load_txt_file
+   Description: Loads the 8ball_responses.txt file and reads it
+   Parameters: none
+   Returns: 
+3. Function Name: magic_8ball
+   Description: Using the load_txt_file function generate random response to user inputed 
+yes or no questions.
+   Parameters: none
+   Returns: random response from 8ball_responses.txt file
