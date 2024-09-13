@@ -1,0 +1,45 @@
+Name: Avery Jones
+Date Created: September 12, 2024
+
+---
+
+Program Description:
+This program reads a user imputed email and determines its spam likelihood by checking a list of common spam words and
+phrases
+
+---
+
+Logical steps:
+1. Prompt user to enter an email message.
+2. Read the email and count the amount of spam words and phrases that appear.
+3. using the count decide the likelihood of the email being spam.
+4. Display the results. (Spam score, Likelihood, keywords/phrases that were found)
+
+---
+
+Variables:
+1. spam_keywords: The list of common spam words and phrases.
+2. user_email: Prompts user to input an email message.
+3. spam_score: Count of the amount of spam words/phrases found in the email.
+4. found_keywords: List of the found spam words/phrases
+5. score: Keeps track of spam_score.
+6. spam_likelihood: checks the determine_spam_likelihood function with the spam_score parameter and determines scam likelihood
+---
+
+Functions:
+1. Function Name: calc_spam_score
+   Description: Counts the amount of spam words in the imputed email
+   Parameters: email
+   Returns: score (count of used spam words/phrases) and keywords
+2. Function Name: determine_spam_likelihood
+   Description: Checks the score variable and uses it to determine the likelihood of the email being spam.
+   Parameters: score
+   Returns: Very Likely, Likely, Somewhat Likely, Unlikely, or Very Unlikely.
+3. Function Name: Email
+   Description: Prompts user to input an email message as well as establishes the calc_spam_score and determine_spam_likelihood
+   Parameters: none
+   Returns: spam score, likelihood message is spam, and keywords/phrases found OR "No spam keywords/phrases detected"
+
+---
+
+Link to repository: https://github.com/AJones711/COP2373
