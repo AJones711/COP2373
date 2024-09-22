@@ -1,0 +1,38 @@
+Name: Avery Jones
+Date Created: September 22, 2024
+
+---
+
+Program Description:
+This program has the user enter a list of their monthly expenses including the expense type and amount then calculates
+and displays the lowest, highest, and total expenses.
+
+---
+
+Logical steps:
+1. Import the reduce tool
+2. Create a list called expenses.
+3. Have user input an expense type.
+4. Have user enter an expense amount to associate with the expense type.
+5. Repeat steps 2 and 3 until user types done then end while loop.
+6. Calculate for the lowest, highest, and total expenses.
+7. Display the calculated results
+
+---
+
+Variables:
+1. total_expense: The combined total expenses.
+2. highest_expense: The highest expense.
+3. lowest_expense: The lowest expense.
+
+---
+
+Functions:
+1. Function Name: main
+   Description: Has user enter a list of expenses then calculates for total, highest and lowest expenses and then displays the results
+   Parameters: N/A
+   Returns: Total expenses, Highest expense, and Lowest expense
+
+---
+
+Link to repository: https://github.com/AJones711/COP2373
