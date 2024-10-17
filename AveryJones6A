@@ -1,0 +1,52 @@
+Name: Avery Jones
+Date Created: October 17, 2024
+
+---
+
+Program Description:
+This program prompts user to enter a phone number, SSN, and a zip code then tests them for validity.
+
+---
+
+Logical steps:
+1. Import the regular expression tool.
+2. Have user input a Phone number.
+3. have user input a SSN.
+4. Have user input a ZIP code.
+5. compare each entered number to a preset pattern and return true or false (does the entered number match the pattern or no).
+6. Display results.
+
+---
+
+Variables:
+1. pattern: preset patterns to compare to user entered numbers to test for validity.
+2. phone: User entered phone number.
+3. ssn: User entered SSN.
+4. zip: User entered ZIP code
+
+---
+
+Functions:
+1. Function Name: isValid_phone
+   Description: Compares user entered number to a preset pattern to determine if the entered number is in the correct format
+   Parameters: phone
+   Returns: True or False
+
+2. Function Name: isValid_ssn
+   Description: Compares user entered ssn to a preset pattern to determine if the entered ssn is in the correct format
+   Parameters: ssn
+   Returns: True or False
+
+3. Function Name: isValid_zip
+   Description: Compares user entered zip code to a preset pattern to determine if the entered zip is in the correct format
+   Parameters: zip
+   Returns: True or False
+
+4. Function Name: main
+   Description: Has user enter a phone number, ssn, and a zip code then prints weather the entered numbers are valid
+   Parameters: N/A
+   Returns: displays results on whether the entered numbers are valid or invalid.
+
+---
+
+Link to repository: https://github.com/AJones711/COP2373
