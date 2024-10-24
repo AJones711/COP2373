@@ -1,0 +1,25 @@
+Name: Avery Jones
+Date Created: 10/24/2024
+Program Description:
+This program prompts the user to input any number of sentences. It then re-displays them with a count of the total number of sentences.
+
+Functions used in the Program (list in order as they are called):
+1. Function Name: main()
+    Description: takes user input, processes the sentences then displays the results.
+    Parameters: N/A
+    Variables:
+        1. sentences: a list that stores the individual sentences entered by the user.
+        2. pat: The pattern used to identify the sentences boundaries.
+        3. s: A string that captures user input.
+        4. combined_sentences: A string that combines all user entered sentences for processing.
+        5. lst: A list that contains the sentences extracted using the pattern.
+    Logical Steps:
+        1. Print a prompt to enter sentences.
+        2. Continue to collect user input until 'exit' is typed
+        3. Append each input into the sentence list.
+        4. combine all entered sentences into a single string.
+        5. Use re.findall with pattern to extract valid sentences
+        6. print each sentence and the total count.
+    Returns: None
+
+Link to your repository: https://github.com/AJones711/COP2373
