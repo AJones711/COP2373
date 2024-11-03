@@ -1,0 +1,91 @@
+Name: Avery Jones
+Date Created: 11/2/2024
+Program Description:
+This program simulates a bank account containing an account name, number, amount, and an interest rate. Money can be withdrawn
+and deposited and the interest rate can also be adjusted.
+
+Functions used in the Program (list in order as they are called):
+1. Function Name: __int__()
+    Description: Initializes a new bank account with the specified attributes.
+    Parameters: self, name, account_number, initial_amount, interest_rate
+    Variables:
+        1. self.name: Stores the name of the account holder.
+        2. self.account_number: Stores the account number.
+        3. self.amount: Stores the initial account balance.
+        4. self.interest_rate: Stores the annual interest rate.
+    Logical Steps:
+        1. Assign the provided parameters to the corresponding instance variables.
+    Returns: None
+
+    2. Function Name: adjust_interest_rate()
+    Description: Adjusts the interest rate of the bank account.
+    Parameters: self, new_rate
+    Variables: None
+    Logical Steps:
+        1. Assign new_rate to self.interest_rate.
+    Returns: None
+
+    3. Function Name: deposit()
+    Description: Deposits a specified amount into the bank account.
+    Parameters: self, amount
+    Variables: None
+    Logical Steps:
+        1. Check if amount is less than or equal to zero; if so, error.
+        2. Add amount to self.amount.
+    Returns: None
+
+    4. Function Name: withdraw()
+    Description: Withdraws a specified amount into the bank account.
+    Parameters: self, amount
+    Variables: None
+    Logical Steps:
+        1. Check if amount is less than or equal to zero; if so, error.
+        2. Check if amount is greater than self.amount; if so, error.
+        3. Subtract amount from self.amount.
+    Returns: None
+
+    5. Function Name: get_balance()
+    Description: Retrieves the current balance of the bank account.
+    Parameters: self
+    Variables: None
+    Logical Steps:
+        1. Return the value of self.amount.
+
+    6. Function Name: calculate_interest()
+    Description: Calculates the interest earned over a specified number of days.
+    Parameters: self, days
+    Variables:
+        1. daily_interest_rate: The daily interest rate calculated from the annual rate.
+        2. interest: The calculated interest earned over the specified days.
+    Logical Steps:
+        1. Check if days is negative; if so, raise error.
+        2. Calculate the daily interest rate as self.interest_rate / 100 / 365.
+        3. Calculate the interest as self.amount * daily_interest_rate * days.
+        4. Return the calculated interest.
+    Returns: The interest earned over the specified number of days.
+    Returns: Current account balance
+
+    7. Function Name: __str__()
+    Description: Provides a string representation of the bank account details.
+    Parameters: self
+    Variables: None
+    Logical Steps:
+        1. Format and return a string that includes the account holder's name, account number, balance, and interest rate.
+    Returns: A formatted string representing the account details.
+
+    8. Function Name: test_bank_acct()
+    Description: Tests the functionality of the BankAcct class by creating an account and performing various operations.
+    Parameters: None
+    Variables:
+        1. account: An instance of the BankAcct class used for testing.
+        2. interest: Stores the calculated interest for a specified number of days.
+    Logical Steps:
+        1. Create a new instance of BankAcct with initial values.
+        2. Print the account details.
+        3. Deposit a specified amount and print the updated account details.
+        4. Withdraw a specified amount and print the updated account details.
+        5. Adjust the interest rate and print the updated account details.
+        6. Calculate interest for a specified number of days and print the result.
+    Returns: None
+
+Link to your repository: https://github.com/AJones711/COP2373
