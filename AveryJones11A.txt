@@ -1,0 +1,32 @@
+Name: Avery Jones
+Date Created: 11/16/2024
+Program Description:
+This program deals the user a poker hand of 5 cards then prompts you to select cards to have discarded and replaced.
+
+Functions used in the Program (list in order as they are called):
+1. Function Name: __int__()
+    Description: Initializes a deck of cards, shuffles them, and prepares to deal them.
+    Parameters: self, size
+    Variables:
+        1. self.card_list: A list of cards represented as integers
+        2. self.current_card: Tracks the index of the current card being dealt.
+        3. self.size: The size of the deck.
+    Logical Steps:
+        1. Generate a list of card numbers (0 to 51).
+        2. Shuffle the deck.
+        3. Set self.current_card to 0, indicating the starting position.
+        4. Store the deck size in self.size.
+    Returns: None
+
+2. Function Name: deal()
+    Description: Deals the next card from the deck, reshuffling the deck if needed.
+    Parameters: self
+    Variables: None
+    Logical Steps:
+        1. Check if there are any cards remaining in the deck.
+        2. If no cards remain, reshuffle the deck and reset the current_card to 0.
+        3. Return the card at the current index and increment current_card.
+    Returns: The next card from the deck
+
+
+Link to your repository: https://github.com/AJones711/COP2373
