@@ -1,0 +1,87 @@
+Name: Avery Jones
+Date Created: 11/21/2024
+Program Description:
+This program reads student grades from a CSV file, calculates various statistics (mean, median, standard deviation, min, max) for each exam, and calculates pass/fail statistics.
+
+Functions used in the Program (list in order as they are called):
+1. Function Name: load_data_from_csv
+    Description: his function loads the exam data from a CSV file and returns it as a NumPy array.
+    Parameters: file_name
+    Variables:
+        1. data: Stores the exam scores as rows of lists, each containing three exam scores.
+    Logical Steps:
+        1. Open the CSV file for reading.
+        2. Skip the header row.
+        3. Read each row, extracting the exam scores and converting them to integers.
+        4. Append each row of exam scores to the data list.
+        5. Return the data list converted into a NumPy array.
+    Returns: np.array(data)
+
+2. Function Name: calculate_exam_statistics()
+    Description: This function calculates statistics (mean, median, standard deviation, min, max) for each exam.
+    Parameters: data
+    Variables:
+        1. exam_stats: Holds statistics for each exam (mean, median, std dev, min, max).
+    Logical Steps:
+        1. Use NumPy functions (mean, median, std, min, max) to calculate the statistics for each column (exam).
+        2. Store the results in a dictionary.
+        3. Return the dictionary.
+    Returns: exam_stats
+
+    3. Function Name: calculate_overall_statistics()
+    Description: This function calculates overall statistics across all exams combined.
+    Parameters: data
+    Variables:
+        1. all_grades: A flattened 1D array of all exam scores across students and exams.
+        2. overall_stats: Holds overall statistics (mean, median, std dev, min, max).
+    Logical Steps:
+        1. Flatten the 2D array into a 1D array containing all grades.
+        2. Use NumPy functions to calculate overall statistics (mean, median, std dev, min, max).
+        3. Store the results in a dictionary.
+        4. Return the dictionary.
+    Returns: overall_stats
+
+    4. Function Name: calculate_pass_fail()
+    Description: This function calculates the pass/fail statistics for each exam.
+    Parameters: data, passing_grade=60
+    Variables:
+        1. pass_fail_stats: Holds the number of students passing and failing each exam.
+    Logical Steps:
+        1. For each exam (column), calculate how many students passed and how many failed by comparing scores to the passing grade.
+        2. Store these counts in the dictionary.
+        3. Return the dictionary.
+    Returns: pass_fail_stats
+
+    5. Function Name: calculate_overall_pass_percentage()
+    Description: This function calculates the overall pass percentage across all exams.
+    Parameters: data, passing_grade=60
+    Variables:
+        1. total_grades: The total number of grades (students * exams).
+        2. passed_grades: The number of grades above or equal to the passing grade.
+        3. pass_percentage: The percentage of passing grades.
+    Logical Steps:
+        1. Count the total number of grades in the data.
+        2. Count the number of passing grades (grades above or equal to the passing grade).
+        3. Calculate the pass percentage.
+        4. Return the percentage.
+    Returns: pass_percentage
+
+    6. Function Name: main()
+    Description: The main function calls all other functions and displays the results.
+    Parameters: None
+    Variables:
+        1. file_name: The name of the CSV file to load data from (grades.csv).
+        2. data: The loaded exam scores.
+        3. exam_stats: Statistics for each exam.
+        4. overall_stats: Overall statistics across all exams.
+        5. pass_fail_stats:Pass/fail statistics for each exam.
+        6. overall_pass_percentage: The overall pass percentage across all exams.
+    Logical Steps:
+        1. Load the exam data using load_data_from_csv().
+        2. Calculate and display statistics for each exam.
+        3. Calculate and display overall statistics for all exams.
+        4. Calculate and display pass/fail statistics for each exam.
+        5. Calculate and display the overall pass percentage.
+    Returns: None
+
+Link to your repository: https://github.com/AJones711/COP2373
